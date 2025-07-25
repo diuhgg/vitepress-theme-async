@@ -7,33 +7,19 @@ const theme = useTheme();
 	<template v-if="theme.user?.email">
 		<div class="trm-divider trm-mb-40 trm-mt-40"></div>
 
-
 		<div class="text-center">
-			<a :href="theme.user.contactUrl" class="trm-btn" target="_blank" rel="noopener noreferrer">
+			<a href="https://cuirx.me" class="trm-btn" target="_blank" rel="noopener noreferrer">
 				{{ $t("site.contactMe") }}
 				<TrmIconEmail />
 			</a>
 		</div>
 
-
-
-
-
-
-		<!-- action button -->
-
-
+		<!-- 注释掉的备用按钮 -->
 		<!-- <div class="text-center">
 			<a :href="`mailto:${theme.user.email}`" class="trm-btn">
 				{{ $t("site.contactMe") }}
 				<TrmIconEmail />
 			</a>
 		</div> -->
-
-
-		<!-- action button end -->
-
-
-
 	</template>
 </template>
